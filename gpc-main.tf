@@ -23,7 +23,7 @@ resource "google_sql_database_instance" "instance3" {
 
 resource "google_sql_database" "database1" {
   name = "playlist"
-  instance = "{google_sql_database_instance.instance3.name}"
+  instance = "spotmusicinstance3"
   charset = "utf8"
   collation = "utf8_general_ci"
 }
