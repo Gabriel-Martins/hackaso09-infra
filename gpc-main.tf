@@ -27,3 +27,10 @@ resource "google_sql_database" "database1" {
   charset = "utf8"
   collation = "utf8_general_ci"
 }
+
+resource "google_sql_user" "playuser" {
+  name = "playuser"
+  instance = "spotmusicinstance3"
+  host = "%"
+  password = "123456"
+}
